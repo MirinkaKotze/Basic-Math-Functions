@@ -1,4 +1,27 @@
 // LESSON 26: TYPES OF MATH & DATA FUNCTIONS - BASIC MATH FUNCTIONS
+
+// WRAPPER CONTAINER-FUNCTION
+function wrapperInput() {
+    userInput = parseInt(prompt('Choose the number that is corresponding to the code you want to run: 1.Identical Digits 2.Palindrome Number 3.Currency Converter 4.Does the circle fit? 5.The date after.'));
+    if (userInput === 1) {
+        threeDigitNumber()
+    }
+    else if (userInput === 2) {
+       palindrome()
+    }
+    else if (userInput === 3) {
+       currencyConverter();
+    }
+    else if (userInput === 4) {
+        willItFit()
+    }
+    else if (userInput === 5) {
+        theDateAfter()
+    }    
+}
+wrapperInput()
+
+
 // 1. Request a three-digit number from a user and check whether it has identical digits in it.
 // Posibile identical options: 111 110 101 011
 function threeDigitNumber() {
@@ -20,7 +43,7 @@ function threeDigitNumber() {
     }
 }
 
-threeDigitNumber()
+// threeDigitNumber()
 
 //[[OR POSIBLE OTHER OPTION #1 - DONE IN CLASS]]
 function threeDigitNumber() {
@@ -37,7 +60,7 @@ function threeDigitNumber() {
         console.log('Your number doesn`t have threee digits')
     }
 }
-threeDigitNumber()
+// threeDigitNumber()
 
 
 // 2. Request a five-unit number from a user and check whether it is a palindrome.
@@ -53,7 +76,7 @@ function palindrome() {
     }       
 }
 
-palindrome()
+// palindrome()
 
 // 3. Execute a currency converter. A user puts in USD, chooses a currency (EUR, SEK, AUD etc.) and gets the result. 
 function currencyConverter() {
@@ -82,7 +105,7 @@ function currencyConverter() {
     }
 }
 
-currencyConverter();
+// currencyConverter();
 
 // 4. Request a length of a circumference (AKA CIRCLE) and a perimeter of a square from a user.
 // Define whether that circumference can fit in that square.
@@ -109,7 +132,7 @@ function willItFit() {
     }
 }
 
-willItFit()
+// willItFit()
 
 // 5. Request a date (dd:mm:yy) and put out the one that goes after it. 
 // Pay attention to the start of a new month, new year, and also leap years.
@@ -119,7 +142,7 @@ function theDateAfter() {
     nextDate.setDate(nextDate.getDate() +1);
     console.log('The day after your entered date is: ' + nextDate);
 }
-theDateAfter()
+// theDateAfter()
 
 
 //[[OR POSIBLE OTHER OPTION #5 - DONE IN CLASS]]
