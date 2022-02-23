@@ -2,7 +2,7 @@
 
 // WRAPPER CONTAINER-FUNCTION
 function wrapperInput() {
-    userInput = parseInt(prompt('Choose the number that is corresponding to the code you want to run: 1.Identical Digits 2.Palindrome Number 3.Currency Converter 4.Does the circle fit? 5.The date after.'));
+    userInput = parseInt(prompt('Choose the number that is corresponding to the code you want to run: \n1.Identical Digits \n2.Palindrome Number \n3.Currency Converter \n4.Does the circle fit? \n5.The date after.'));
     if (userInput === 1) {
         threeDigitNumber()
     }
@@ -147,21 +147,21 @@ function theDateAfter() {
 
 //[[OR POSIBLE OTHER OPTION #5 - DONE IN CLASS]]
 // 1. Input (parse the string that we will get from user) '01:12:2021' 
-const year = yourDate.substring(6, 10);
-console.log("this is the year ", year);
-const month = yourDate.substring(3, 5)
-console.log("This is the month ", month)
-const day = yourDate.substring(0, 2);
-console.log("this is the day ", day)
+// const year = yourDate.substring(6, 10);
+// console.log("this is the year ", year);
+// const month = yourDate.substring(3, 5)
+// console.log("This is the month ", month)
+// const day = yourDate.substring(0, 2);
+// console.log("this is the day ", day)
 
 // 2. Solution with Date object
 // es6 ==> 'Hello ' + name + '. Your are logged in' -> `Hello ${name}. Your are logged in.`
 // '2021-12-31'
 
-const currentDateObject = new Date(`${year}-${month}-${day}`);
+// const currentDateObject = new Date(`${year}-${month}-${day}`);
 
-currentDateObject.setDate(currentDateObject.getDate() + 1);
+// currentDateObject.setDate(currentDateObject.getDate() + 1);
 
-const nextDayString = currentDateObject.toDateString();
+// const nextDayString = currentDateObject.toDateString();
 
-console.log('nextDayString: ', nextDayString);
+// console.log('nextDayString: ', nextDayString);
