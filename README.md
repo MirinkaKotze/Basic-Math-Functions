@@ -1,6 +1,8 @@
 # Math & Data Functions
 Beetroot Academy - Lesson 26
 
+Live Page URL: https://mirinkakotze.github.io/Basic-Math-Functions/
+
 Home assignment:
 
 1. Request a three-digit number from a user and check whether it has identical digits in it.
